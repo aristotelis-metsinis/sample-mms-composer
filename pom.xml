@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mms.composer</groupId>
+    <artifactId>mms_creation</artifactId>
+    <version>1.1</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Nokia MMS Java Library version 1.1
+        The library provides examples of the most common tasks applications perform through the Multimedia Messaging
+        Service Center (MMSC). Examples include such tasks as message creation and encoding, decoding
+        and sending messages to the MMSC according to the WAP-209 MMS encapsulation specification and
+        external application interface specification -->
+        <dependency>
+            <groupId>com.nokia.mms</groupId>
+            <artifactId>MMSLibrary.jar</artifactId>
+            <version>1.1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/MMSLibrary.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+</project>
