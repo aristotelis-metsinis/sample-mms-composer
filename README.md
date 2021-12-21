@@ -7,13 +7,13 @@ This sample java application composes an MMS with a predefined structure and mul
 ### Usage
 
 <pre>
-mms_creation$ java.exe -Dfile.encoding=UTF-8 -classpath "target/classes;lib/MMSLibrary.jar" com.mms.composer.SampleMMSComposer &lt;address of the message sender> &lt;address of the message receiver> &lt;subject of the multimedia message>
+sample-mms-composer$ java.exe -Dfile.encoding=UTF-8 -classpath "target/classes;lib/MMSLibrary.jar" com.mms.composer.SampleMMSComposer &lt;address of the message sender> &lt;address of the message receiver> &lt;subject of the multimedia message>
 </pre>
 
 example :
 
 <pre>
-mms_creation$ java.exe -Dfile.encoding=UTF-8 -classpath "target/classes;lib/MMSLibrary.jar" com.mms.composer.SampleMMSComposer "made by Aristotelis" +306900000000/TYPE=PLMN "This is a nice message ..."
+sample-mms-composer$ java.exe -Dfile.encoding=UTF-8 -classpath "target/classes;lib/MMSLibrary.jar" com.mms.composer.SampleMMSComposer "made by Aristotelis" +306900000000/TYPE=PLMN "This is a nice message ..."
 </pre>
 
 ----
