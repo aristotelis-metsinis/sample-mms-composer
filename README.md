@@ -23,12 +23,12 @@ sample-mms-composer$ java.exe -Dfile.encoding=UTF-8 -classpath "target/classes;l
 This sample application was derived from the *"OriginatingApp.java"* file which came with the *Nokia MMS Java Library 1.1*
 
 
-Instead of sending the MMS to an MMSC, however, this sample application simply writes the encoded MMS to a file. That file can then be used, e.g. with various tools that are provided by Nokia -- the "EAIF" emulator, the "Series60" terminal emulator that comes with the "Series60" SDK for Symbian OS, the "7210" simulator, etc. It should be worth mentioning that this file can also be placed on a standard web server, with the *".MMS"* file extension mapped to the MIME *"content-type" : "application/vnd.wap.mms-message"* as follows :
+Instead of sending the MMS to an MMSC, however, this sample application simply writes the encoded MMS to a file. That file can then be used, e.g. with various tools that are provided by Nokia -- the "EAIF" emulator, the "Series60" terminal emulator that comes with the "Series60" SDK for Symbian OS, the "7210" simulator, etc. It should be worth mentioning that this file can also be placed on a standard web server, with the *".MMS"* file extension mapped to the MIME *"content-type" : "application/vnd.wap.mms-message"* in the *"/etc/httpd/conf/httpd.conf"* as follows or similarly e.g. in the *"/etc/mime.types"*:
 
 <pre>
    &lt;IfModule mime_module>
 	    	:
-		    :
+		:
       AddType application/vnd.wap.mms-message .mms .MMS
    &lt;/IfModule>
 </pre>
